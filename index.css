@@ -1,5 +1,40 @@
 @import "tailwindcss";
 
+@theme {
+  --color-gengar-dark: #2e1a47;
+  --color-gengar-base: #4a2c7a;
+  --color-gengar-light: #7b5ebb;
+  --color-gengar-accent: #c96dd8;
+  --color-gengar-eyes: #ff0000;
+  
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-glow: pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-shimmer: shimmer 2s linear infinite;
+  --animate-blob: blob 7s infinite;
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  @keyframes pulse-glow {
+    0%, 100% { opacity: 1; box-shadow: 0 0 20px #7b5ebb; }
+    50% { opacity: .5; box-shadow: 0 0 5px #7b5ebb; }
+  }
+  
+  @keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+  
+  @keyframes blob {
+    0% { transform: translate(0px, 0px) scale(1); }
+    33% { transform: translate(30px, -50px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+    100% { transform: translate(0px, 0px) scale(1); }
+  }
+}
+
 body {
   background-color: #0f0a1e;
   color: white;
