@@ -1,0 +1,23 @@
+{
+    "id": "Gengar",
+    "name": "Gengar (Ghost Style)",
+    "author": "PokeDynamic",
+    "dimensions": {
+        "width": 120,
+        "height": 120
+    },
+    "eye_mode": {
+        "source": "eyes_open.png",
+        "crop_rect": [
+            20,
+            30,
+            80,
+            30
+        ],
+        "blink_interval": [
+            2000,
+            6000
+        ],
+        "blink_frames": 3
+    }
+}

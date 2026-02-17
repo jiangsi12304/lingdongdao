@@ -137,7 +137,7 @@ const Hero: React.FC<HeroProps> = ({ theme }) => {
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-radial from-gengar-accent/40 to-transparent blur-3xl"></div>
               
               <img 
-                src="/assets/gengar_hero_website_1771317567797.jpg" 
+                src="assets/gengar_hero_website_1771317567797.jpg" 
                 alt="Gengar Dynamic Island"
                 className="w-full h-full object-contain drop-shadow-[0_0_30px_rgba(123,94,187,0.8)] z-10 relative hover:scale-110 transition-transform duration-500 cursor-pointer rounded-3xl"
               />

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
 const galleryImages = [
-  { src: '/assets/gengar_hero_1771317599607.jpg', title: '暗影耿鬼', desc: 'Shadow Gengar' },
-  { src: '/assets/gengar_hero_1771317623741.jpg', title: '幽灵之夜', desc: 'Ghost Night' },
-  { src: '/assets/gengar_hero_section_1771317647850.jpg', title: '紫影降临', desc: 'Purple Shadow' },
+  { src: 'assets/gengar_hero_1771317599607.jpg', title: '暗影耿鬼', desc: 'Shadow Gengar' },
+  { src: 'assets/gengar_hero_1771317623741.jpg', title: '幽灵之夜', desc: 'Ghost Night' },
+  { src: 'assets/gengar_hero_section_1771317647850.jpg', title: '紫影降临', desc: 'Purple Shadow' },
 ];
 
 const Gallery: React.FC = () => {

@@ -90,7 +90,7 @@ const DynamicIsland: React.FC = () => {
         
         <div className="absolute inset-0 z-20 pointer-events-none rounded-lg ring-1 ring-white/10 shadow-[inset_0_0_20px_rgba(0,0,0,0.5)]"></div>
         
-        <div className="absolute inset-0 bg-[url('/assets/gengar_hero_1771317599607.jpg')] bg-cover bg-center opacity-90 transition-opacity">
+        <div className="absolute inset-0 bg-cover bg-center opacity-90 transition-opacity" style={{ backgroundImage: 'url(assets/gengar_hero_1771317599607.jpg)' }}>
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
             <div className="absolute inset-0 bg-gradient-to-r from-purple-900/30 to-transparent"></div>
         </div>

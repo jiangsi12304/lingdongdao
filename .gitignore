@@ -31,8 +31,3 @@ npm-debug.log*
 # Temp
 *.tmp
 *.temp
-
-# Installer files (too large for git)
-installer/
-public/download/*.exe
-public/download/*.zip
