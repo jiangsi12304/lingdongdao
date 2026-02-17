@@ -9,8 +9,12 @@ interface UseDownloadReturn {
   reset: () => void;
 }
 
-const DOWNLOAD_URL = '/download/PokeDynamic-Setup-v1.0.exe';
 const FILE_NAME = 'PokeDynamic-Setup-v1.0.exe';
+
+const getDownloadUrl = (): string => {
+  const basePath = import.meta.env.BASE_URL || '/';
+  return `${basePath}download/${FILE_NAME}`;
+};
 
 export function useDownload(): UseDownloadReturn {
   const [status, setStatus] = useState<DownloadStatus>('idle');
@@ -21,7 +25,8 @@ export function useDownload(): UseDownloadReturn {
     setProgress(0);
 
     try {
-      const response = await fetch(DOWNLOAD_URL);
+      const downloadUrl = getDownloadUrl();
+      const response = await fetch(downloadUrl);
       
       if (!response.ok) {
         throw new Error('Download failed');
